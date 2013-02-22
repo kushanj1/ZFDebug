@@ -482,6 +482,10 @@ class ZFDebug_Controller_Plugin_Debug extends Zend_Controller_Plugin_Abstract
             document.onmouseup=function(e){
                 clearTimeout(ZFDebugResizeTimer);
             }
+                        
+            $(".nextpresectiontoggle").click(function() {
+                $(this).next(".pre").toggle();
+            });
         };
 
         function ZFDebugResize()
@@ -530,12 +534,6 @@ class ZFDebug_Controller_Plugin_Debug extends Zend_Controller_Plugin_Abstract
                     panels[i].style.display = "none";
                 }
             }
-                        
-	    $(document).ready(function() {
- 	        $(".nextpresectiontoggle").click(function() {
- 	        	$(this).next(".pre").toggle();
-  	    	});
-  	    });
 
         }
     </script>
