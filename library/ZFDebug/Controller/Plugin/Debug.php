@@ -483,7 +483,7 @@ class ZFDebug_Controller_Plugin_Debug extends Zend_Controller_Plugin_Abstract
                 clearTimeout(ZFDebugResizeTimer);
             }
                         
-            $(".nextpresectiontoggle").click(function() {
+            $(".arrayexpandcollapse").click(function() {
                 $(this).next(".pre").toggle();
             });
         };
